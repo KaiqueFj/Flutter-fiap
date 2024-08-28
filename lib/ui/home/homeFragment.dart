@@ -2,12 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 
-// Define your ViewModel
-class HomeViewModel extends ChangeNotifier {
-  // Add any state management logic if needed
-}
+class HomeViewModel extends ChangeNotifier {}
 
-// Define your Flutter Widget
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -32,7 +28,7 @@ class _HomePageState extends State<HomePage> {
           target: LatLng(-34.0, 151.0),
           zoom: 10.0,
         ),
-        markers: _markers, // Provide the set of markers here
+        markers: _markers,
       ),
     );
   }
